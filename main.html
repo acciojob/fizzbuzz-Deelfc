@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <script>
+        function fizzBuzz() {
+            let result = '';
+            for (let i = 1; i <= 20; i++) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    result += 'FizzBuzz';
+                } else if (i % 3 === 0) {
+                    result += 'Fizz';
+                } else if (i % 5 === 0) {
+                    result += 'Buzz';
+                } else {
+                    result += i;
+                }
+                result += '\n';  // Add a newline character after each result
+            }
+            alert(result);
+        }
 
+        fizzBuzz();
+    </script>
 </body>
-
 </html>
